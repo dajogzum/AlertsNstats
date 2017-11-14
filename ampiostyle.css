@@ -1,0 +1,55 @@
+.ampio-container{
+    font-size: 20px;
+    position: relative;
+    width: 300px;
+    top: -30px;
+}
+.default-ampio {
+position: relative;
+height: 0px;
+right: 0px;
+opacity: 0;
+transition: opacity 0.5s linear, right 0.5s ease-in-out, margin-top 0.5s linear;
+margin-top: 0px;
+}
+.ani-ampio {
+position: relative;
+height: 0px;
+width: 300px;
+right: 0px;
+opacity: 1;
+transition: margin-top 0.5s linear, opacity 0.5s linear, right 0.5s ease-in-out;
+margin-top: 33px;
+}
+.icon-ampio {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  margin-right: 10px;
+}
+.ampio-container > span{
+    visibility: hidden;
+    position: relative;
+    height: 0px;
+    right: -100px;
+    opacity: 0;
+}
+.red-ampio {
+  animation: alert 1s ease-in-out 0s infinite;
+}
+.yellow-ampio {
+  animation: warning 4s ease-in-out 0s infinite;
+}
+@keyframes alert {
+    0%   {transform: scale(0.7,0.7)}
+    50%  {transform: scale(1.2,1.2)}
+    100%  {transform: scale(0.7,0.7)}
+
+}
+@keyframes warning {
+    0%   {opacity: 0;}
+    15%  {opacity: 1;}
+    85%  {opacity: 1;}
+    100% {opacity: 0;}
+}
