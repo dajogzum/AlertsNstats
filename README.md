@@ -9,6 +9,13 @@ git clone https://github.com/dajogzum/AlertsNstats
 cd ../modules/alertsnstats
 git pull
 ```
+### Config
+```
+{
+  module: "alertsnstats",
+  position: "top_left",
+},
+```
 **Link do pokazania powiadomienia:**<br>
 `http://xxx.xxx.xxx.xxx:8080/remote?action=NOTIFICATION&notification=SHOW_STATS&payload={"id":"amp1","comment":"tekst","type":"alert/warning/info"}`
 
