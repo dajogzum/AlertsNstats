@@ -24,4 +24,4 @@ git pull
 > info - biała ikona statyczna<br>
 
 **Link do ukrywania powiadomienia:**<br>
-`http://xxx.xxx.xxx.xxx:8080/remote?action=NOTIFICATION&notification=HIDE_STATS&payload={"id":"amp1"}`
+`http://xxx.xxx.xxx.xxx:8080/remote?action=NOTIFICATION&notification=HIDE_STAT&payload={"id":"amp1"}`
