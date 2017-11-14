@@ -1,9 +1,9 @@
-# AlertsNstats
+## AlertsNstats
 
-#instalacja<br>
+# instalacja<br>
 git clone https://github.com/dajogzum/AlertsNstats
 
-#aktualizacja<br>
+# aktualizacja<br>
 cd ../modules/alertsnstats<br>
 git pull
 
