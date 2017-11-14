@@ -6,7 +6,7 @@ git clone https://github.com/dajogzum/AlertsNstats
 ```
 ### Aktualizacja<br>
 ```
-cd ../modules/alertsnstats<br>
+cd ../modules/alertsnstats
 git pull
 ```
 **Link do pokazania powiadomienia:**<br>
