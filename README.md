@@ -26,17 +26,17 @@ git pull
 `http://xxx.xxx.xxx.xxx:8080/remote?action=NOTIFICATION&notification=SHOW_STAT&payload={"id":"amp1","comment":"tekst","type":"alert"}`
 
 ##### ID:
-> dowolne unikalne ID dla każdego komunikatu<br>
-> lepiej na razie nie używać polskich znaków<br>
+- Dowolne unikalne ID dla każdego komunikatu<br>
+- Lepiej na razie nie używać polskich znaków<br>
 
 ##### Comment:
-> treść komunikatu do wyświetlenia<br>
-> spacja - %20<br>
+- Treść komunikatu do wyświetlenia<br>
+- Spacja - %20<br>
 
 ##### Type:
-> alert - czerwona pulsująca ikona<br>
-> warning - pomarańczowa wolno pulsująca ikona<br>
-> info - biała ikona statyczna<br>
+- Alert - czerwona pulsująca ikona<br>
+- Warning - pomarańczowa wolno pulsująca ikona<br>
+- Info - biała ikona statyczna<br>
 
 **Link do ukrywania powiadomienia:**<br>
 `http://xxx.xxx.xxx.xxx:8080/remote?action=NOTIFICATION&notification=HIDE_STAT&payload={"id":"amp1"}`
