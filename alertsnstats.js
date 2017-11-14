@@ -3,7 +3,7 @@ Module.register("alertsnstats", {
 	},
 
 	getStyles: function () {
-		return ["alertsnstats.css",];
+		return ["alertsnstatsstyle.css",];
 	},
 
 	getDom: function() {
