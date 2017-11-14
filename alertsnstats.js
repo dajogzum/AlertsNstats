@@ -1,15 +1,15 @@
-Module.register("statusampio", {
+Module.register("alertsnstats", {
 	default: {
 	},
 
 	getStyles: function () {
-		return ["ampiostyle.css",];
+		return ["alertsnstats.css",];
 	},
 
 	getDom: function() {
 		var self = this;
 		var wrapper = document.createElement("div");
-			wrapper.className = "ampio-container";
+			wrapper.className = "alertsnstats-container";
 			wrapper.innerHTML = '<div id="alert"></div><div id="warning"></div><div id="info"></div>';
 		return wrapper;
 	},
@@ -20,16 +20,16 @@ Module.register("statusampio", {
 		var image = document.createElement("img");
 		var att = document.createAttribute("src");
 		var textnode = document.createTextNode(message.comment);
-		att.value = "modules/statusampio/"+message.type+".png";
+		att.value = "modules/alertsnstats/"+message.type+".png";
 		image.setAttributeNode(att);
 			if(message.type == "warning"){
-				image.className = "icon-ampio yellow-ampio";
+				image.className = "icon-stats yellow-stats";
 			}else if(message.type == "alert"){
-				image.className = "icon-ampio red-ampio";
+				image.className = "icon-stats red-stats";
 			}else{
-				image.className = "icon-ampio"
+				image.className = "icon-stats"
 			}
-		node.className = "default-ampio";
+		node.className = "default-stats";
 		node.appendChild(image);
 		node.id = message.id;
 		span.id = message.id+"-sp";
@@ -37,11 +37,11 @@ Module.register("statusampio", {
 		node.appendChild(span);
 		list = document.getElementById(message.type);
 		list.insertBefore(node, list.childNodes[0]);
-		setTimeout(function(){node.className = "ani-ampio";}, 600);
+		setTimeout(function(){node.className = "ani-stats";}, 600);
 	},
 
 	hidemsg: function(message) {
-		document.getElementById(message.id).className = "default-ampio";
+		document.getElementById(message.id).className = "default-stats";
 		var item = document.getElementById(message.id);
 		setTimeout(function(){ item.parentNode.removeChild(item); }, 600);
 	},
@@ -57,10 +57,10 @@ Module.register("statusampio", {
 	},
 	
 	notificationReceived: function(notification, payload, sender) {
-		if (notification === "SHOW_AMPIO") {
+		if (notification === "SHOW_STAT") {
 			console.log("showing msg id="+payload.id)
 			this.checkobj(payload);
-		} else if(notification === "HIDE_AMPIO") {
+		} else if(notification === "HIDE_STAT") {
 			console.log("hiding msg id="+payload.id)
 			this.hidemsg(payload);
 		}
