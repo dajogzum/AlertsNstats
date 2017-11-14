@@ -17,8 +17,8 @@ git pull
 },
 ```
 **Link do pokazania powiadomienia:**<br>
-`http://xxx.xxx.xxx.xxx:8080/remote?action=NOTIFICATION&notification=SHOW_STATS&payload={"id":"amp1","comment":"tekst","type":"alert/warning/info"}`
-
+`http://xxx.xxx.xxx.xxx:8080/remote?action=NOTIFICATION&notification=SHOW_STAT&payload={"id":"amp1","comment":"tekst","type":"TYP"}`
+##### TYP:
 > alert - czerwona pulsująca ikona<br>
 > warning - pomarańczowa wolno pulsująca ikona<br>
 > info - biała ikona statyczna<br>
