@@ -18,6 +18,15 @@ git pull
 ```
 **Link do pokazania powiadomienia:**<br>
 `http://xxx.xxx.xxx.xxx:8080/remote?action=NOTIFICATION&notification=SHOW_STAT&payload={"id":"amp1","comment":"tekst","type":"alert"}`
+
+##### ID:
+> dowolne unikalne ID dla każdego komunikatu
+> lepiej na razie nie używać polskich znaków
+
+##### Comment:
+> treść komunikatu do wyświetlenia
+> spacja - %20
+
 ##### Type:
 > alert - czerwona pulsująca ikona<br>
 > warning - pomarańczowa wolno pulsująca ikona<br>
