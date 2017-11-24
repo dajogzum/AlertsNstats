@@ -6,19 +6,19 @@ git clone https://github.com/dajogzum/AlertsNstats
 ```
 ### Aktualizacja<br>
 ```
-cd ../modules/alertsnstats
+cd ../modules/AlertsNstats
 git pull
 ```
 ### Aktualizacja jeśli były zmieniane pliki lokalnie<br>
 ```
-cd ../modules/alertsnstats
+cd ../modules/AlertsNstats
 git reset --hard
 git pull
 ```
 ### Config
 ```
 {
-  module: "alertsnstats",
+  module: "AlertsNstats",
   position: "top_left",
 },
 ```
