@@ -1,4 +1,4 @@
-Module.register("alertsnstats", {
+Module.register("AlertsNstats", {
 	default: {
 	},
 
@@ -20,7 +20,7 @@ Module.register("alertsnstats", {
 		var image = document.createElement("img");
 		var att = document.createAttribute("src");
 		var textnode = document.createTextNode(message.comment);
-		att.value = "modules/alertsnstats/"+message.type+".png";
+		att.value = "modules/AlertsNstats/"+message.type+".png";
 		image.setAttributeNode(att);
 			if(message.type == "warning"){
 				image.className = "icon-stats yellow-stats";
