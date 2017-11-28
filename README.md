@@ -13,6 +13,7 @@ git pull
 ```
 cd ../modules/AlertsNstats
 git reset --hard
+git clean -df
 git pull
 ```
 ### Config
