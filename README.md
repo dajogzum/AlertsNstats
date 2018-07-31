@@ -41,3 +41,6 @@ git pull
 
 **Link do ukrywania powiadomienia:**<br>
 `http://xxx.xxx.xxx.xxx:8080/remote?action=NOTIFICATION&notification=HIDE_STAT&payload={"id":"amp1"}`
+
+**Link do pokazywania kamery:**<br>
+`http://xxx.xxx.xxx.xxx:8080/remote?action=NOTIFICATION&notification=CAMERA`
