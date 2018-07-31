@@ -69,10 +69,10 @@ Module.register("AlertsNstats", {
 				break;
 			case "SHOW_CAMERA":
 				this.sendNotification("RTSP-PLAY", "stream1");
-				module[0].show(1000);
+				module.show(1000);
 				break;
 			case "HIDE_CAMERA":
-				module[0].hide(1000);
+				module.hide(1000);
 				this.sendNotification("RTSP-STOP", "stream1");
 				break;
 			case "ALL_MODULES_STARTED":
