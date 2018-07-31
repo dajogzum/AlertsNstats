@@ -57,12 +57,19 @@ Module.register("AlertsNstats", {
 	},
 	
 	notificationReceived: function(notification, payload, sender) {
-		if (notification === "SHOW_STAT") {
-			console.log("showing msg id="+payload.id)
-			this.checkobj(payload);
-		} else if(notification === "HIDE_STAT") {
-			console.log("hiding msg id="+payload.id)
-			this.hidemsg(payload);
+		switch(notification){
+			case "SHOW_STAT":
+				console.log("showing msg id="+payload.id)
+				this.checkobj(payload);
+				break;
+			case "HIDE_STAT":
+				console.log("hiding msg id="+payload.id)
+				this.hidemsg(payload);
+				break;
+			case "CAMERA":
+				this.sendNotification("RTSP-PLAY", "streamX");
+				MMM-RTSPStream.show();
+				break;	
 		}
 	},
 });
