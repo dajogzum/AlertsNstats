@@ -66,10 +66,14 @@ Module.register("AlertsNstats", {
 				console.log("hiding msg id="+payload.id)
 				this.hidemsg(payload);
 				break;
-			case "CAMERA":
-				this.sendNotification("RTSP-PLAY", "streamX");
-				MMM-RTSPStream.show();
-				break;	
+			case "SHOW_CAMERA":
+				this.sendNotification("RTSP-PLAY", "stream1");
+				MMM-RTSPStream.show(1000);
+				break;
+			case "HIDE_CAMERA":
+				MMM-RTSPStream.hide(1000);
+				this.sendNotification("RTSP-STOP", "stream1");
+				break;
 		}
 	},
 });
