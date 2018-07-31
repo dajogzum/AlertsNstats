@@ -57,7 +57,6 @@ Module.register("AlertsNstats", {
 	},
 	
 	notificationReceived: function(notification, payload, sender) {
-		var module;
 		switch(notification){
 			case "SHOW_STAT":
 				console.log("showing msg id="+payload.id)
@@ -69,15 +68,9 @@ Module.register("AlertsNstats", {
 				break;
 			case "SHOW_CAMERA":
 				this.sendNotification("RTSP-PLAY", "stream1");
-				module.show(1000);
 				break;
 			case "HIDE_CAMERA":
-				module.hide(1000);
 				this.sendNotification("RTSP-STOP", "stream1");
-				break;
-			case "ALL_MODULES_STARTED":
-				module = MM.getModules().withClass("MMM-RTSPStream");
-				console.log(module);
 				break;
 		}
 	},
