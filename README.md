@@ -28,7 +28,7 @@ git pull
 
 ##### ID:
 - Dowolne unikalne ID dla każdego komunikatu<br>
-- Lepiej na razie nie używać polskich znaków<br>
+- Polskie znaki działają ale czasem coś z kodowaniem może być nie tak<br>
 
 ##### Comment:
 - Treść komunikatu do wyświetlenia<br>
